@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shailesh Mannur - Apple Employee</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px; /* To account for the fixed nav bar */
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+        section {
+            text-align: center;
+            margin: 20px;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 0 5px;
+                font-size: 0.9em;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <h1>Shailesh Mannur<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo"></h1>
+        <p>AI and ML Enthusiast Aspiring to work with Apple</p>
+    </header>
+    <section id="about">
+        <h2>About</h2>
+        <p>Hello, I'm Shailesh Mannur, I am passionate about leveraging artificial intelligence to create innovative solutions and improve user experiences.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p> I've worked on a bunch of projects a few of them are listed below:</p>
+        <ul>
+            <li>Iot Projects</li>
+            <li>Raspberry Pi Projects.</li>
+            <li>Arduino Projects.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:shailesh336mannur@gmail.com" style="color: #ffffff; text-decoration: underline;">shailesh336mannur@gmail.com</a> or <a href="mailto:shailesh336business@gmail.com" style="color: #ffffff; text-decoration: underline;">shailesh336business@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Shailesh Mannur</p>
+    </footer>
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
